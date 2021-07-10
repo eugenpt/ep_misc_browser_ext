@@ -1,0 +1,21 @@
+{
+    "name": "ep's misc broeser extension",
+    "description": "yeah. for all the minor stuff",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "*://www.typing-lessons.org/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.typing-lessons.org/*"
+],
+            "js": ["typing_lessons__org.js"]
+        }
+    ],
+    "browser_action": {
+        "default_title": "EP's stuff"
+    },
+    "manifest_version": 2
+}
