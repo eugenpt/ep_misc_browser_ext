@@ -9,6 +9,13 @@
     "content_scripts": [
         {
             "matches": [
+                "*://www.google.ru/*",
+                "*://www.google.com/*"
+            ],
+            "js": ["google.js"]
+        },
+        {
+            "matches": [
                 "*://www.typing-lessons.org/*"
 ],
             "js": ["typing_lessons__org.js"]
