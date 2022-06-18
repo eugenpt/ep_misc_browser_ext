@@ -1,7 +1,7 @@
 {
-    "name": "ep's misc broeser extension",
+    "name": "ep's misc browser extension",
     "description": "yeah. for all the minor stuff",
-    "version": "1.0",
+    "version": "1.01",
     "permissions": [
         "activeTab",
         "*://www.typing-lessons.org/"
@@ -17,8 +17,14 @@
         {
             "matches": [
                 "*://www.typing-lessons.org/*"
-],
+            ],
             "js": ["typing_lessons__org.js"]
+        },
+        {
+            "matches": [
+                "*://vk.com/*"
+            ],
+            "js": ["vk.com.js"]
         }
     ],
     "browser_action": {
